@@ -36,6 +36,7 @@ class MyHomePage extends StatelessWidget {
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 20,
+                              fontWeight: FontWeight.w600,
                             ),
                           ),
                           TextSpan(
@@ -43,13 +44,14 @@ class MyHomePage extends StatelessWidget {
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 12,
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
                         ],
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 135),
+                      padding: const EdgeInsets.only(left: 130),
                       child: SizedBox(
                         height: 40,
                         width: 40,
@@ -71,16 +73,110 @@ class MyHomePage extends StatelessWidget {
               padding: const EdgeInsets.only(top: 23),
               child: Container(
                 height: 570,
-                width: size.width * 1,
+                width: size.width * 1.0,
                 decoration: const BoxDecoration(color: Colors.blue),
                 child: const Column(
                   children: [],
                 ),
               ),
             ),
-            const Row(
+            const SizedBox(
+              height: 50,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                
+                SizedBox(
+                  height: 70,
+                  width: 85,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 32,
+                          width: 70,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(40),
+                            color: const Color.fromARGB(255, 49, 47, 47),
+                          ),
+                          child: Image.asset(
+                              'assets/images/Icon feather-target.png'),
+                        ),
+                        const Text(
+                          'Atividades',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 50,
+                  width: 50,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 24, right: 24),
+                    child: Container(
+                      height: 50,
+                      width: 1,
+                      decoration: BoxDecoration(
+                        color: const Color.fromARGB(70, 158, 158, 158),
+                        borderRadius: BorderRadius.circular(40),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 70,
+                  width: 85,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Image.asset(
+                            'assets/images/Icon awesome-github.png'),
+                      ),
+                      const Text(
+                        'Repositórios',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 50,
+                  width: 50,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 24, right: 24),
+                    child: Container(
+                      height: 50,
+                      width: 1,
+                      decoration: BoxDecoration(
+                        color: const Color.fromARGB(70, 158, 158, 158),
+                        borderRadius: BorderRadius.circular(40),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 70,
+                  width: 85,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Icon(
+                          Icons.person,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        'Sobre o dev',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ],
