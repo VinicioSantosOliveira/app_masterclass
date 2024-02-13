@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -61,7 +59,8 @@ class MyHomePage extends StatelessWidget {
                             Radius.circular(40),
                           ),
                           child: Image.asset(
-                              'assets/images/Icon awesome-moon.png'),
+                            'assets/images/Icon awesome-moon.png',
+                          ),
                         ),
                       ),
                     ),
@@ -71,12 +70,84 @@ class MyHomePage extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(top: 23),
-              child: Container(
+              child: SizedBox(
                 height: 570,
                 width: size.width * 1.0,
-                decoration: const BoxDecoration(color: Colors.blue),
-                child: const Column(
-                  children: [],
+                child: Column(
+                  children: [
+                    Container(
+                      alignment: Alignment.topCenter,
+                      height: 180,
+                      width: size.width * 1,
+                      decoration: BoxDecoration(
+                        color: const Color.fromRGBO(23, 32, 38, 1),
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  height: 45,
+                                  width: 45,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(40),
+                                  ),
+                                  child: Image.asset(
+                                    'assets/images/Icon awesome-running.png',
+                                  ),
+                                ),
+                              ),
+                              const Text(
+                                'Animações',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                ),
+                              ),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 130),
+                                child: Text(
+                                  'Exercicíos: ',
+                                  style: TextStyle(
+                                    color: Color.fromARGB(81, 86, 90, 1),
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const Text('data'),
+                          const Row(),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Container(
+                      height: 180,
+                      width: size.width * 1,
+                      decoration: BoxDecoration(
+                        color: Colors.green,
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Container(
+                      height: 180,
+                      width: size.width * 1,
+                      decoration: BoxDecoration(
+                        color: Colors.yellow,
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -101,7 +172,8 @@ class MyHomePage extends StatelessWidget {
                             color: const Color.fromARGB(255, 49, 47, 47),
                           ),
                           child: Image.asset(
-                              'assets/images/Icon feather-target.png'),
+                            'assets/images/Icon feather-target.png',
+                          ),
                         ),
                         const Text(
                           'Atividades',
