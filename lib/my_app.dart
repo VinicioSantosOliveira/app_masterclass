@@ -1,3 +1,4 @@
+import 'package:app_masterclass/custom_container.dart';
 import 'package:app_masterclass/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'my_home_page.dart';
@@ -10,7 +11,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         '/': (context) => const SplashPage(),
-        '/home': (context) => const MyHomePage()
+        '/home': (context) => const MyHomePage(),
+        '/customContainer': (context) => const CustomContainer(),
       },
     );
   }
