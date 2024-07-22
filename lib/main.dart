@@ -1,5 +1,6 @@
-import 'package:app_masterclass/widgets/my_app.dart';
 import 'package:flutter/material.dart';
+
+import 'app/pages/widgets/my_app.dart';
 
 void main() {
   runApp(const MyApp());

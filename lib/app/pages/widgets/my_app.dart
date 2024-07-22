@@ -1,7 +1,8 @@
-import 'package:app_masterclass/pages/activity_page.dart';
-import 'package:app_masterclass/pages/splash_page.dart';
+
 import 'package:flutter/material.dart';
-import '../pages/my_home_page.dart';
+import '../activity_page.dart';
+import '../my_home_page.dart';
+import '../splash_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
